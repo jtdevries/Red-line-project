@@ -1,0 +1,25 @@
+.astronaut {
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: #626262;
+}
+
+.astrBody {
+  position: absolute;
+  height: 75px;
+  width: 50px;
+  top: 75px;
+  left: 25px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.astrHead {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 2px solid #000;
+}
