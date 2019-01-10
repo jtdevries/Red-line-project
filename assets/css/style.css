@@ -182,8 +182,6 @@ body {                                                                          
 }
 .planet2 {
   position: absolute;
-  top: 15px;
-  right: 320px;
   height: 200px;
   width: 200px;
   border-radius: 100%;
