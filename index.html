@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/scss/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Portfolio</title>
@@ -11,66 +12,77 @@
   <body>
 
 
-    <div class="loader">
-      <section class="anim">
-      <div></div>
-      </section>
-
-      <section class="text"><div>T</div></section>
-      <section class="text"><div>H</div></section>
-      <section class="text"><div>I</div></section>
-      <section class="text"><div>J</div></section>
-      <section class="text"><div>S</div></section>
-    </div>
-
+    <div class="loader"></div>
     <canvas id="c"></canvas>
 
+    <div class="wrapper">
+      <div class="pages">
+        <div class="page-1 page">                                              <!-- PAGE ONE -->
 
-    <div class="container">                                                     <!--CONTAINER-->
-      <div class="tag"></div>
-      <nav class="menu">
-        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-        <label class="menu-open-button" for="menu-open">
-          <span class="hamburger hamburger-1"></span>
-          <span class="hamburger hamburger-2"></span>
-          <span class="hamburger hamburger-3"></span>
-        </label>
-        <a id="p1" href="https://github.com/jtdevries" class="menu-item"> <i class="fab fa-github"></i> </a>
-        <a id="p2" href="#" class="menu-item"> <i class="fab fa-linkedin-in"></i> </a>
-        <a id="p3" href="#" class="menu-item"> <i class="fab fa-facebook-f"></i> </a>
-      </nav>
 
-      <div class="scrollingText">
-        <div class="scrollingTextContainer">
-          <p class="scrollingTextContainerText">
-            Hello
-          </p>
 
-          <ul class="scrollingTextContainerList">
-            <li class="scrollingTextContainerListItem">world !</li>
-            <li class="scrollingTextContainerListItem">guest !</li>
-            <li class="scrollingTextContainerListItem">developer !</li>
-            <li class="scrollingTextContainerListItem">creator !</li>
-          </ul>
+          <div class="container">
+            <div class="wall1backp1">
+              <img src="assets/images/wall1backp1.png" alt="">
+            </div>
+            <div class="wall1backp2">
+              <img src="assets/images/wall1backp2.png" alt="">
+            </div>
+            <div class="tag"></div>
+            <nav class="menu">
+              <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+              <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+              </label>
+              <a id="p1" href="https://github.com/jtdevries" class="menu-item"> <i class="fab fa-github"></i> </a>
+              <a id="p2" href="#" class="menu-item"> <i class="fab fa-linkedin-in"></i> </a>
+              <a id="p3" href="#" class="menu-item"> <i class="fab fa-facebook-f"></i> </a>
+            </nav>
+
+            <div class="scrollingText">
+              <div class="scrollingTextContainer">
+                <p class="scrollingTextContainerText">
+                  Hello
+                </p>
+
+                <ul class="scrollingTextContainerList">
+                  <li class="scrollingTextContainerListItem">world !</li>
+                  <li class="scrollingTextContainerListItem">guest !</li>
+                  <li class="scrollingTextContainerListItem">developer !</li>
+                  <li class="scrollingTextContainerListItem">creator !</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-2 page">                                              <!-- PAGE TWO -->
+          <div class="container2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="page-3 page">                                              <!-- PAGE THREE -->
+          <h1>Page 3</h1>
+        </div>
+        <div class="page-4 page">                                              <!-- PAGE FOUR -->
+          <h1>Page 4</h1>
+        </div>
+        <div class="page-5 page">                                              <!-- PAGE FIVE -->
+          <h1>Page 5</h1>
         </div>
       </div>
-
-      <div class="header">
-        <div class="planet2">
-          <div class="cloudsLight2"></div>
-          <div class="cloudsDark2"></div>
-        </div>
-        <div class="planet1">
-          <div class="cloudsLight1"></div>
-          <div class="cloudsDark1"></div>
-        </div>
-        <div class="comet"></div>
-      </div>
-      <div class="stars"></div>
-      <div class="sun"></div>
-      <div class="contentPlanet1"></div>
-
     </div>
+
+
 
   <script src="assets/javascript/jquery-2.2.4.js"></script>
   <script src="assets/javascript/javascript.js"></script>

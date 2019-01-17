@@ -1,5 +1,65 @@
 //MAIN . SCSS
 @import "mixins";
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pages {
+  width: 100vw;
+  height: 100vh;
+  transition: -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s;
+  transition: transform ease 0.8s, -webkit-transform ease 0.8s;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+
+.page-1 {
+  background-image: url('../../assets/images/wall1back.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page-2 {
+  background-image: url('../../assets/images/wallpaper2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page-3 {
+  background-image: url('../../assets/images/wallpaper3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.page-4 {
+    background-color: #f73070;
+}
+
+.page-5 {
+  background-color: #324956;
+}
+
+h1 {
+  color: white;
+  font-family: Raleway, sans-serif;
+  line-height: 100vh;
+  font-size: 3rem;
+  text-align: center;
+}
+
 body {
   background-color: #324956;
   .anim {
@@ -11,58 +71,6 @@ body {
   border-radius: 50%;
   margin: 20px;
 }
-
-@media only screen and (min-width: 768px) {
-  .anim {
-    width: 150px;
-    height: 150px;
-    margin: 30px;
-  }
-}
-
-@keyframes loading-rotation {
-  50% {border-color: #1565c0;}
-  100% {transform: rotate(360deg);}
-}
-
-.anim div {
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #c62828;
-  border-radius: 50%;
-  animation: loading-planet 5s linear infinite;
-}
-@media only screen and (min-width: 768px) {
-  .anim div {
-    height: 45px;
-    width: 45px;
-  }
-}
-
-@keyframes loading-planet {
-  50% {background: #1565c0;}
-}
-.text {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 64px;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  color: #c62828;
-  animation: loading-text 5s linear infinite;
-}
-@media only screen and (min-width: 768px) {
-  .text {
-    font-size: 90px;
-    letter-spacing: 0.3em;
-  }
-}
-
-@keyframes loading-text {
-  50% {color: #1565c0;}
-}
   #c {
 	position:absolute;
 	top: 0;
@@ -73,17 +81,36 @@ body {
     padding: 0;
     margin: 0;
     width: 100vw;
-    max-width: 100%;
     height: 100vh;
-    .header {
-      width: 100%;
-      height: 60vh;
+    .wall1backp1 {
+      position: absolute;
+      right: 10vw;
+      top: 10vh;
+    }
+    .wall1backp2 {
+      position: absolute;
+      right: 35vw;
+      top: 35vh;
     }
     /*@include stars(20%, 100%);       //position: top, right*/
     @include scrollText(15%, 30%);   //position: top, right
     @include hMenu(40%, 20px);       //position: top, right
-    @include planet1(20%, 5%);       //position: top, right
-    @include planet2(15%, 25%);      //position: top, right
-    @include sun(35%, 35%);          //position: top, right
+
+  }
+  .container2 {
+    width: 70%;
+    margin: 300px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    div {
+      opacity: 0.75;
+      border-radius: 5px;
+      border: 10px solid #626262;
+      background-color: #fff;
+
+    }
   }
 }
