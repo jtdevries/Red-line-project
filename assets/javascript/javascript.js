@@ -1,18 +1,18 @@
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-    $(".scrollingText").fadeOut()
-    $(".scrollingText").delay(500)
-    $(".scrollingText").fadeIn()
-    $(".menu").fadeOut()
-    $(".menu").delay(1000)
-    $(".menu").fadeIn()
-    $(".wall1backp1").fadeOut()
-    $(".wall1backp1").delay(1500)
-    $(".wall1backp1").fadeIn()
-    $(".wall1backp2").fadeOut()
-    $(".wall1backp2").delay(2000)
-    $(".wall1backp2").fadeIn()
-});
+// $(window).load(function() {
+//     $(".loader").fadeOut("slow");
+//     $(".scrollingText").fadeOut()
+//     $(".scrollingText").delay(500)
+//     $(".scrollingText").fadeIn()
+//     $(".menu").fadeOut()
+//     $(".menu").delay(1000)
+//     $(".menu").fadeIn()
+//     $(".wall1backp1").fadeOut()
+//     $(".wall1backp1").delay(1500)
+//     $(".wall1backp1").fadeIn()
+//     $(".wall1backp2").fadeOut()
+//     $(".wall1backp2").delay(2000)
+//     $(".wall1backp2").fadeIn()
+// });
 
 $(window).load(function(){
   $(".container2").fadeOut()

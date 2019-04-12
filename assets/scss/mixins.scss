@@ -97,7 +97,7 @@
 //MENU START
 @mixin hMenu ($top, $right){
   .menu {
-    position: sticky;
+    position: absolute;
     left: $right;
     top: $top;
     margin-left: -80px;

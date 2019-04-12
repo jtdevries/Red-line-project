@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: hidden;
   width: 100vw;
@@ -27,25 +31,22 @@
 }
 
 .page-1 {
-  background-image: url('../../assets/images/wall1back.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #324956;
+  // background-image: url('../../assets/images/wall1back.png');
+  // background-size: cover;
+  // background-position: center;
 }
 
 .page-2 {
-  background-image: url('../../assets/images/wallpaper2.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #f73070;
 }
 
 .page-3 {
-  background-image: url('../../assets/images/wallpaper3.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #324956;
 }
 
 .page-4 {
-    background-color: #f73070;
+  background-color: #f73070;
 }
 
 .page-5 {
@@ -70,7 +71,7 @@ body {
   border: solid 1px #c62828;
   border-radius: 50%;
   margin: 20px;
-}
+} 
   #c {
 	position:absolute;
 	top: 0;
@@ -82,19 +83,19 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    .wall1backp1 {
-      position: absolute;
-      right: 10vw;
-      top: 10vh;
-    }
-    .wall1backp2 {
-      position: absolute;
-      right: 35vw;
-      top: 35vh;
-    }
+    // .wall1backp1 {
+    //   position: absolute;
+    //   right: 10vw;
+    //   top: 10vh;
+    // }
+    // .wall1backp2 {
+    //   position: absolute;
+    //   right: 35vw;
+    //   top: 35vh;
+    // }
     /*@include stars(20%, 100%);       //position: top, right*/
     @include scrollText(15%, 30%);   //position: top, right
-    @include hMenu(40%, 20px);       //position: top, right
+    @include hMenu(40%, 50px);       //position: top, right
 
   }
   .container2 {
@@ -108,7 +109,7 @@ body {
     div {
       opacity: 0.75;
       border-radius: 5px;
-      border: 10px solid #626262;
+      border: 2px solid #626262;
       background-color: #fff;
 
     }
